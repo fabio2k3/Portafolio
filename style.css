@@ -60,3 +60,40 @@ a{
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+/* Contenedor de proyectos, aparece debajo del enlace */
+.projects-container {
+    margin-top: 20px; /* Añadimos un margen superior para separar de la sección anterior */
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column; /* Mantener los proyectos en columna */
+    align-items: center;
+}
+
+/* Estilo para cada proyecto dentro del contenedor */
+.project-item {
+    display: flex;
+    flex-direction: row; /* Cambiado a fila para alinear imagen y nombre al lado */
+    align-items: center;
+    margin: 15px 0; /* Aseguramos espacio entre los proyectos */
+}
+
+/* Estilo de las imágenes */
+.project-item img {
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: 100px;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    margin-right: 15px; /* Espacio entre la imagen y el nombre */
+}
+
+/* Estilo del nombre del lenguaje */
+.lenguaje-name {
+    background-color: #4d4d4d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

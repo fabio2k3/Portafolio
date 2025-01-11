@@ -33,7 +33,7 @@ h1{
     color: white;
     border-radius: 8px;
     text-align: center;
-    flex-grow: 1; /*Permite que las secciones tengan igual ancho*/
+    flex-basis: calc(33.33% - 20px); /* Ancho fijo para las secciones */
     margin: 0 10px; /*Espaciado entre secciones*/
     font-size: 1.5rem;
     font-weight: bold;
@@ -96,4 +96,13 @@ a{
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.content-box{
+    width: calc(33.33% - 20px); /* Mismo ancho que las secciones menos el margen */
+    margin: 20px 0 20px 50px; /* Margen superior e inferior, alineado a la izquierda */
+    background-color: white; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra suave para el recuadro */
 }

@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,8 +6,8 @@ body{
     color: #333;
 }
 
-/*Centrar el encabezado y aumentar Tamaño*/
-h1{
+/* Centrar el encabezado y aumentar Tamaño */
+h1 {
     text-align: center;
     font-size: 3rem;
     margin: 50px 0;
@@ -18,33 +18,33 @@ h1{
     border-radius: 8px;
 }
 
-/*Contenedor de las secciones*/
-.sections{
+/* Contenedor de las secciones */
+.sections {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 50px;
 }
 
-/*Estilo para cada seccion*/
-.section{
+/* Estilo para cada sección */
+.section {
     padding: 20px;
     background-color: #800020;
     color: white;
     border-radius: 8px;
     text-align: center;
     flex-basis: calc(33.33% - 20px); /* Ancho fijo para las secciones */
-    margin: 0 10px; /*Espaciado entre secciones*/
+    margin: 0 10px; /* Espaciado entre secciones */
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.section:hover{
+.section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -56,27 +56,40 @@ a{
     align-items: center;
 }
 
-.section a{
+.section a {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-/* Contenedor de proyectos, aparece debajo del enlace */
-.projects-container {
-    margin-top: 20px; /* Añadimos un margen superior para separar de la sección anterior */
-    margin-left: 50px;
-    margin-right: 50px;
+.main-content {
     display: flex;
-    flex-direction: column; /* Mantener los proyectos en columna */
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 50px;
 }
 
-/* Estilo para cada proyecto dentro del contenedor */
+/* Estilo del content-box */
+.content-box {
+    width: 30%; /* Ajusta el ancho según lo que necesites */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave para el recuadro */
+    margin-right: 20px;
+}
+
+/* Contenedor de proyectos */
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Alineación vertical de los proyectos */
+    gap: 15px; /* Espaciado entre los proyectos */
+    width: 55%; /* Ajusta el ancho según lo que necesites */
+}
+
+/* Estilo para cada proyecto */
 .project-item {
     display: flex;
-    flex-direction: row; /* Cambiado a fila para alinear imagen y nombre al lado */
     align-items: center;
-    margin: 15px 0; /* Aseguramos espacio entre los proyectos */
 }
 
 /* Estilo de las imágenes */
@@ -96,13 +109,4 @@ a{
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-.content-box{
-    width: calc(33.33% - 20px); /* Mismo ancho que las secciones menos el margen */
-    margin: 20px 0 20px 50px; /* Margen superior e inferior, alineado a la izquierda */
-    background-color: white; /* Fondo blanco */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra suave para el recuadro */
 }
